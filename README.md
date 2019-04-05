@@ -5,16 +5,16 @@ The objective of the project is to classify ocular fundus images as healthy or s
 ### About the code [listed in alphabetical order]
 
 **Binary_patches.py**
--Use as input annotated images an with thar imformation the original image is cropped in the area of interest 
+-Use as input annotated images cropping from the original image an area of interest
 
 **Clipped_Final.py**
--Remove the innecesary black background from the images
+-Remove the black background from the images
 
 **Color_Patches.py**
--Save patches of a dataset of images. The input are the patch size and the stride through the image
+-Save patches of a set of images. Receive as input the patch size and the stride through the image
 
 **Evaluation_CNN.py**
--Code to evaluate the performace of a trained model
+-Code to evaluate the performance  of a trained model
 
 **Image_duplicate.py**
 -Search through a folder for possible duplicate images
@@ -23,14 +23,13 @@ The objective of the project is to classify ocular fundus images as healthy or s
 -Train a base network, default is InceptionV3, applying transfer learning and data augmentation
 
 **Keras_Fine_Tunning.py**
--Train a base network fine tunning the layers
+-Train a base network fine tuning the layers
 
 **New_Clahe.py**
-Apply Clahe to a given image dataset
+Apply Clahe to a set of images
 
 **RGB_mean.py**
 -Zero center and normalize the data [in this case images] used for train, validate and test
 
 **Resize_Average.py**
-Resize a set of images obtaining the average though all the images in a folder given
-
+Resize a set of images obtaining the average though all the images in a given folder 
