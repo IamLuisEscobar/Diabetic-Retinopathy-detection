@@ -12,14 +12,25 @@ The objective of the project is to classify ocular fundus images as healthy or s
 
 **Color_Patches.py**
 -Save patches of a dataset of images. The input are the patch size and the stride through the image
-Evaluation_CNN.py
-Image_duplicate.py
-Json_Weights_Transfer.py
-This file is the responsable of the training.
 
-Keras_Fine_Tunning.py
-Is a variant of the first file. Here we train the layers at the begginign and at the end
-New_Clahe.py
-RGB_mean.py
-Resize_Average.py
+**Evaluation_CNN.py**
+-Code to evaluate the performace of a trained model
+
+**Image_duplicate.py**
+-Search through a folder for possible duplicate images
+
+**Json_Weights_Transfer.py**
+-Train a base network, default is InceptionV3, applying transfer learning and data augmentation
+
+**Keras_Fine_Tunning.py**
+-Train a base network fine tunning the layers
+
+**New_Clahe.py**
+Apply Clahe to a given image dataset
+
+**RGB_mean.py**
+-Zero center and normalize the data [in this case images] used for train, validate and test
+
+**Resize_Average.py**
+Resize a set of images obtaining the average though all the images in a folder given
 
