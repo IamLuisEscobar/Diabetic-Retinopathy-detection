@@ -35,6 +35,7 @@ def getListOfFiles(dirName):
             pass
     return Filter_list
 
+#Getting paths
 Filter_list=getListOfFiles('/home/luis/DataSets/Patches/Test03/val/MA')
 path_to_model = '/home/luis/DataSets/Patches/Test03/InceptionV3_model_01.json'
 path_to_weights ='/home/luis/DataSets/Patches/Test03/InceptionV3_weights_01.h5'
@@ -52,7 +53,7 @@ model.load_weights(path_to_weights)
 count=0
 count_healthy=0
 count_notHealthy=0
-# classify the input image
+# For loop to classify a set of images
 for fnames in Filter_list:
     image = cv2.imread(fnames)
     if image.shape[0] != 150 or image.shape[1] != 150:
@@ -72,20 +73,11 @@ for fnames in Filter_list:
     count +=1
     if count ==100:
         break
-
+#First sensitivity and specificity test
 print ('Healthy')
 print count_healthy
 print ('Not Healthy')
 print count_notHealthy
 
-'''
-# draw the label on the image
-output = imutils.resize(orig, width=400)
-cv2.putText(output, label, (10, 25),  cv2.FONT_HERSHEY_SIMPLEX,
-	0.7, (0, 255, 0), 2)
- 
-# show the output image
-cv2.imshow("Output", output)
-cv2.waitKey(0)
-'''
+
  
