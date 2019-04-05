@@ -7,8 +7,11 @@ The objective of the project is to classify ocular fundus images as healthy or s
 **Binary_patches.py**
 -Use as input annotated images an with thar imformation the original image is cropped in the area of interest 
 
-Clipped_Final.py
-Color_Patches.py
+**Clipped_Final.py**
+-Remove the innecesary black background from the images
+
+**Color_Patches.py**
+-Save patches of a dataset of images. The input are the patch size and the stride through the image
 Evaluation_CNN.py
 Image_duplicate.py
 Json_Weights_Transfer.py
