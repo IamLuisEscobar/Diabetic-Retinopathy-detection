@@ -5,7 +5,6 @@ Created on Wed Feb 27 01:25:46 2019
 
 @author: luishdz
 """
-# set the matplotlib backend so figures can be saved in the background
 import matplotlib
 matplotlib.use("Agg")
 from keras import applications
@@ -26,15 +25,18 @@ train_data_dir='/home/luis/DataSets/Patches/Test03/train'
 validation_data_dir='/home/luis/DataSets/Patches/Test03/test'
 testing_data_dir='/home/luis/DataSets/Patches/Test03/val'
 
+#Setting some parameters
 train_samples = 45831
 validation_samples = 5739
 test_samples = 5720
 G=2
 epochs=8
 batch_size=16
+#Loading base model InceptionV3
 base_model=applications.InceptionV3(weights='imagenet',include_top=False,
                                     input_shape=(img_width,img_height,3))
 
+#Adding a layer to train
 model_top=Sequential()
 model_top.add(GlobalAveragePooling2D(input_shape=base_model.output_shape[1:],
                                      data_format=None))
@@ -44,7 +46,7 @@ model_top.add(Dropout(0.5))
 model_top.add(Dense(2,activation='sigmoid'))
 model=Model(inputs=base_model.input,outputs=model_top(base_model.output))
 
-# check to see if we are compiling using just a single GPU
+#Multiple GPU training in case there are more than one GPU available
 if G <= 1:
         print("[INFO] training with 1 GPU...")
         train_model = model
@@ -61,9 +63,11 @@ else:
         # make the model parallel
         train_model = multi_gpu_model(model,gpus=G)
 
+#Defining the parameters for the optimizer
 train_model.compile(optimizer=Adam(lr=0.0001, beta_1=0.9,beta_2=0.999,epsilon=1e-08,
                              decay=0.0),loss='categorical_crossentropy', metrics=['accuracy'])
 
+#Data augmentation process
 train_datagen=ImageDataGenerator(
         rescale=1./255,
         shear_range=0.2,
@@ -91,18 +95,13 @@ testing_generator=val_datagen.flow_from_directory(
         batch_size=batch_size,
         class_mode='categorical')
 
-'''
-# checkpoint save if improve
-filepath="weights-improvement-{epoch:02d}-{val_acc:.2f}.hdf5"
-checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
-callbacks_list = [checkpoint]
-'''
 
-# checkpoint save the best
+# checkpoint to save the best model
 filepath="weights_best.h5"
 checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 callbacks_list = [checkpoint]
 
+#train model
 
 H=train_model.fit_generator(
         train_generator,
@@ -111,14 +110,14 @@ H=train_model.fit_generator(
         validation_data=validation_generator,
         validation_steps=validation_samples//batch_size) 
                                     
-#Es necesario nombrar de diferente modo al modelo del gpu
+#Saving model as json file and weights of the trained model 
 model_json=model.to_json()
 with open('InceptionV3_model_01.json','w') as json_file:
     json_file.write(model_json)
 model.save_weights('InceptionV3_weights_01.h5')
 print ('Saved model and weights to disk')
 
-# plot the training loss and accuracy
+# Plot training loss and accuracy
 N = epochs
 plt.style.use("ggplot")
 plt.figure()
