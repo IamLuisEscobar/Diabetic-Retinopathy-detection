@@ -13,6 +13,7 @@ import numpy as np
 import cv2
 import os
 
+#Function to load all the images in a given folder including possible subfolders
 def getListOfFiles(dirName):
     # create a list of file and sub directories 
     # names in the given directory 
