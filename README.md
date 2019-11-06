@@ -2,11 +2,12 @@
 ### Summary
 Project focus in the detection of diabetic retinopathy using a ConvNet as classifier. The goal of the project is to classify ocular fundus images as healthy or sick. Some preprocessing techniques were used to test which of them provide better results. 
 
-
-
 <p align="center">
   <img width="400" height="400" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Fundus_photograph_of_normal_right_eye.jpg"
 </p>
+
+### Methodology
+The methodology
 
 
 
