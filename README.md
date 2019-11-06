@@ -1,6 +1,6 @@
 # Diabetic-Retinopathy-detection
-Project focus in the detection of diabetic retinopathy using some preprocessing techniques and Convolutional Neural Network as classifier. 
-The objective of the project is to classify ocular fundus images as healthy or sick. Some preprocessing techniques were used to identify which of them provide better results. The classifier use InceptionV3 architecture as base model. Transfer learning and data augmentation were used during the training process.
+Project focus in the detection of diabetic retinopathy using a ConvNet as classifier. 
+The objective of the project is to classify ocular fundus images as healthy or sick. Some preprocessing techniques were used to test which of them provide better results. 
 
 ### About the code [listed in alphabetical order]
 
