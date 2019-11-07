@@ -8,7 +8,7 @@ Project focus in the detection of diabetic retinopathy using a ConvNet as classi
 
 ### Methodology
 <p align="center">
-  <img width="900" height="400" src="https://github.com/IamLuisEscobar/Diabetic-Retinopathy-detection/blob/master/Picture1.png"
+  <img width="1000" height="200" src="https://github.com/IamLuisEscobar/Diabetic-Retinopathy-detection/blob/master/Picture1.png"
 </p>
 
 
