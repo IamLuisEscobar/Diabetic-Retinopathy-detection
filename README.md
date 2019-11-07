@@ -12,7 +12,12 @@ The following diagram shows the methodology used to classify ocular fundus image
   <img width="1000" height="150" src="https://github.com/IamLuisEscobar/Diabetic-Retinopathy-detection/blob/master/Picture1.png"
 </p>
 
+### Preprocessing
+**Step 1**
+All the images were cropped to eliminate the black edges.  
 
+**Step 2**
+The images were normalized to reduce 
 
 ### About the code [listed in alphabetical order]
 
