@@ -7,8 +7,9 @@ Project focus in the detection of diabetic retinopathy using a ConvNet as classi
 </p>
 
 ### Methodology
+The following diagram shows the methodology used to classify ocular fundus images.
 <p align="center">
-  <img width="1000" height="200" src="https://github.com/IamLuisEscobar/Diabetic-Retinopathy-detection/blob/master/Picture1.png"
+  <img width="1000" height="150" src="https://github.com/IamLuisEscobar/Diabetic-Retinopathy-detection/blob/master/Picture1.png"
 </p>
 
 
