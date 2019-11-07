@@ -19,6 +19,14 @@ All the images were cropped to eliminate the black edges.
 **Step 2**
 The images were normalized to reduce 
 
+**Step 3**
+Contrast Limited Adaptative Histogram Equalization
+
+### ConvNet training
+
+
+
+
 ### About the code [listed in alphabetical order]
 
 **Binary_patches.py**
