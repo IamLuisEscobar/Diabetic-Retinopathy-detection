@@ -23,6 +23,17 @@ The images were normalized to reduce variation in light conditions.
 Contrast Limited Adaptative Histogram Equalization was used to imporove the contrast in the images. New_Clahe.py
 
 ### ConvNet training
+Four architectures were tested looking for the one with the best performance
+**Architecture one Darshit Doshi et al**
+**Architecture two Kele Xu et al**
+**Architecture three ResNet 50**
+**Architecture four InceptionV3**
+
+The hyperparameters values after tunning are
+Learning rate ...... 0.0001
+Batch size ......... 16
+Epochs ............. 30
+Activation functions ReLu and Sigmoid in the last layer
 
 
 
@@ -58,3 +69,6 @@ Apply Clahe filter to a set of images
 
 **Resize_Average.py**
 -Resize a set of images obtaining the average though all the images in a given folder 
+Citation
+[1] D. Doshi, A. Shenoy, D. Sidhpura and P. Gharpure, "Diabetic Retinopathy detection using deep convolutional neural networks," International Conference on Computing, Analytics and Security Trends , 19-21 Dec 2016.
+[2] K. F. D. &. M. H. Xu, "Deep convolutional neural network-based early automated detection of diabetic retinopathy using fundus image," Molecules, pp. 22(12), 2054., 2017. 
