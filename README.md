@@ -25,16 +25,16 @@ Contrast Limited Adaptative Histogram Equalization was used to imporove the cont
 ### ConvNet training
 Four architectures were used because different configuration were proposed in the papers consulted.
 
--**[1] Darshit Doshi et al**
--**[2] Kele Xu et al**
--**[3] ResNet 50**
--**[4] InceptionV3**
+**[1] Darshit Doshi et al**
+**[2] Kele Xu et al**
+**[3] ResNet 50**
+**[4] InceptionV3**
 
 Below are the hyperparameter values used
--Learning rate ...... 0.0001
--Batch size ......... 16
--Epochs ............. 30
--Activation functions ReLu and Sigmoid in the last layer
+Learning rate ...... 0.0001
+Batch size ......... 16
+Epochs ............. 30
+Activation functions ReLu and Sigmoid in the last layer
 
 
 
