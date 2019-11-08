@@ -12,7 +12,9 @@ The following diagram shows the methodology used to classify ocular fundus image
   <img width="1000" height="150" src="https://github.com/IamLuisEscobar/Diabetic-Retinopathy-detection/blob/master/Picture1.png"
 </p>
 
-### Preprocessing
+### Data
+
+### Data preprocessing
 **Step 1**
 All the images were cropped to eliminate the black edges. Clipped_Final.py is the script resposable of the task 
 
@@ -22,7 +24,7 @@ The images were normalized to reduce variation in light conditions.
 **Step 3**
 Contrast Limited Adaptative Histogram Equalization was used to imporove the contrast in the images. New_Clahe.py
 
-### ConvNet training
+### Training of ConvNet 
 Four architectures were used to compare their results in the same dataset.
 
 - **[1] Darshit Doshi et al**
