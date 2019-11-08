@@ -23,13 +23,14 @@ The images were normalized to reduce variation in light conditions.
 Contrast Limited Adaptative Histogram Equalization was used to imporove the contrast in the images. New_Clahe.py
 
 ### ConvNet training
-Four architectures were tested looking for the one with the best performance
-**Architecture one Darshit Doshi et al**
-**Architecture two Kele Xu et al**
-**Architecture three ResNet 50**
-**Architecture four InceptionV3**
+Four architectures were used because different configuration were proposed in the papers consulted.
 
-The hyperparameters values after tunning are
+**[1] Darshit Doshi et al**
+**[2] Kele Xu et al**
+**[3] ResNet 50**
+**[4] InceptionV3**
+
+Below are the hyperparameter values used
 Learning rate ...... 0.0001
 Batch size ......... 16
 Epochs ............. 30
