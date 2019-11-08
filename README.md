@@ -31,10 +31,10 @@ Four architectures were used because different configuration were proposed in th
 - **[4] InceptionV3**
 
 Below are the hyperparameter values used
-Learning rate ...... 0.0001
-Batch size ......... 16
-Epochs ............. 30
-Activation functions ReLu and Sigmoid in the last layer
+> Learning rate ...... 0.0001
+> Batch size ......... 16
+> Epochs ............. 30
+> Activation functions ReLu and Sigmoid in the last layer
 
 
 
