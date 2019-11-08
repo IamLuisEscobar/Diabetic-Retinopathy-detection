@@ -32,22 +32,22 @@ Four architectures were used to compare their results in the same dataset.
 
 **Image augmentation**  
 The following transformations were applied to each image to increase the dataset
-> rescale=1./255  
-> shear_range=0.2  
-> zoom_range=0.2  
-> rotation_range=20  
-> width_shift_range=0.2  
-> height_shift_range=0.2  
-> horizontal_flip=True
+rescale=1./255  
+shear_range=0.2  
+zoom_range=0.2  
+rotation_range=20  
+width_shift_range=0.2  
+height_shift_range=0.2  
+horizontal_flip=True
 
 **Transfer learning**
 
 
 **Hyperparameter**  
-> Learning rate ...... 0.0001  
-> Batch size ......... 16  
-> Epochs ............. 30  
-> Activation functions ReLu and Sigmoid in the last layer
+Learning rate ...... 0.0001  
+Batch size ......... 16  
+Epochs ............. 30  
+Activation functions ReLu and Sigmoid in the last layer
 
 
 
