@@ -45,13 +45,16 @@ horizontal_flip=True
 **Transfer learning**
 
 
-**Hyperparameter**  
+**Tunning of Hyperparameters**  
 Learning rate ...... 0.0001  
 Batch size ......... 16  
 Epochs ............. 30  
 Activation functions ReLu and Sigmoid in the last layer
 
+**Test of ConvNet with new data**
 
+
+**Results and visualization**
 
 
 ### About the code [listed in alphabetical order]
