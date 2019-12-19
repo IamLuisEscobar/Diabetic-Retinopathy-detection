@@ -55,6 +55,8 @@ Activation functions ReLu and Sigmoid in the last layer
 
 
 **Results and visualization**
+https://github.com/keras-team/keras/issues/3477
+This was a great resource when I got problems with the obtained predictions between predict and predict_generator. The answer provided by atortoricimontaperto resume the problem and provide solutions to avoid different results
 
 
 ### About the code [listed in alphabetical order]
