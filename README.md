@@ -57,7 +57,8 @@ Activation functions ReLu and Sigmoid in the last layer
 **Results and visualization**
 https://github.com/keras-team/keras/issues/3477
 This was a great resource when I got problems with the obtained predictions between predict and predict_generator. The answer provided by atortoricimontaperto resume the problem and provide solutions to avoid different results
-
+**How loss is obtained in keras**
+https://stackoverflow.com/questions/58159154/how-to-calculate-categorical-cross-entropy-by-hand
 
 ### About the code [listed in alphabetical order]
 
