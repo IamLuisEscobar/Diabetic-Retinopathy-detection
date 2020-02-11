@@ -1,7 +1,8 @@
 # Diabetic-Retinopathy-detection
-### Summary
-Project focus in the detection of diabetic retinopathy using a ConvNet as classifier. The goal of the project is to classify ocular fundus images as healthy or sick. Some preprocessing techniques were used to test which of them provide better results. 
+### Abstract
 
+
+Diabetic retinopathy is a disease that occurs as a result of damage to the blood vessels of the retina. This damage can cause partial or total blindness which is preventable with an early detection and treatment. The California Health Care Foundation CHCF recently found that among patients with diabetic retinopathy who were referred to a specialist by their primary care physicians only 23% of 288 patients with advanced retinal disease from four high-performing clinics ever made it to ophthalmology care. Patients fell out at every step of the process: 15% never learned about their disease, another 15% did not receive an appointment, 22% did not attend their appointments, and 25% opted out of treatment. With the projection of growth of the disease and the lack of specialists, it is necessary to develop a tool that helps in the detection of diabetic retinopathy. This research focus in the implementation of a Convolutional Neural Network, which uses retinal images as input and generates a prediction value for the disease at its output. This seeks to validate the reliability of Convolutional Neural Networks in the detection of diabetic retinopathy and thus propose its widespread use to reduce the workload of ophthalmologists by referring with them only to patients who really need it.
 <p align="center">
   <img width="400" height="400" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Fundus_photograph_of_normal_right_eye.jpg"
 </p>
